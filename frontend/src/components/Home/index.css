@@ -1,0 +1,96 @@
+.home-container {    
+    height: 100vh;
+    width: 100vw;    
+    margin: 0px;        
+    background-image: url('../../img/home.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 50px; 
+    align-items: center;
+}
+.home-card {
+    background: transparent;            
+    padding-bottom: 30px 20px;
+    min-height: 30vh;
+    min-width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(67, 183, 199);
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;    
+    
+    
+}
+.home-input-container {
+    display: flex;
+    flex-direction: row;    
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    background-color:rgb(32, 140, 241);
+    padding: 20px;    
+    border-radius: 6px;    
+    
+}
+.home-buttons {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: rgb(80, 27, 139);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;    
+}
+
+.inputs-container {    
+    background-color:rgb(32, 140, 241);
+    width: 80%;
+    /* height: 90%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+.home-submit-button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: rgb(36, 173, 71);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;   
+    align-self: stretch;
+}
+.home-inputs {
+    margin: 10px;
+    padding: 6px 20px;
+    background-color: rgb(60, 159, 224);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;    
+}
+.home-back-button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: rgb(221, 235, 26);
+    border: none;
+    border-radius: 4px;
+    color: black;
+    font-weight: 500;
+    cursor: pointer;   
+    align-self: stretch;   
+}
+.home-error {
+    color: red;
+    font-weight: bold;
+}
