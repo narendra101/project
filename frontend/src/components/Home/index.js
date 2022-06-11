@@ -46,11 +46,10 @@ class Home extends Component{
             body: JSON.stringify(data),
             mode: 'cors'
         }
-        const response = await fetch(url, options);
-        console.log(response.status);
-        const resp = await response.json();
-        if(resp.status === 200){
-            this.setState({password: '', page: 'login'})
+        const response = await fetch(url, options);        
+        const resp = await response.json();                
+        if(response.status === 200){
+            this.setState({password: '', page: 'login', error: ''})
         } else {            
             if(resp.msg.includes('username')){
                 this.setState({error: 'username not available'})
@@ -95,7 +94,7 @@ class Home extends Component{
                 <form className="inputs-container">
                     <h1>Login</h1>                     
                     <input required className="home-inputs" type="text" placeholder="enter username" onChange={e => this.setState({username: e.target.value})} />                   
-                    <input required className="home-inputs" type="text" placeholder="enter password" onChange={e => this.setState({password: e.target.value})} />                                        
+                    <input required className="home-inputs" type="password" placeholder="enter password" onChange={e => this.setState({password: e.target.value})} />                                        
                     <input type="submit" className="home-submit-button" value="Login"  />
                     <input type="button" className="home-back-button" value="Back" onClick={this.renderHome}/>
                     {error && <p className="home-error">{error}</p>}
